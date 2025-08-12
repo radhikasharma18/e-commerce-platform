@@ -8,6 +8,8 @@ import { FaShoppingBag } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaGripLines } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
+import Home from '../pages/Home';
 
 
 function Navbar() {
@@ -38,7 +40,7 @@ function Navbar() {
         <div className='flex  justify-between gap-2'>
         <div className='flex items-center bg-gray-100 justify-center w-[200px] h-[100%] border-[1px] border-gray-200 '><div>CATEGORIES</div> <span><IoIosArrowDown/></span></div>
         <div className='flex gap-6'>
-        <div className='flex items-center'><div>HOME</div> <span><IoIosArrowDown/></span></div>
+        <NavLink to='/home' className='flex items-center'><div>HOME</div> <span><IoIosArrowDown/></span></NavLink>
        <div className='flex items-center'><div>PAGES</div> <span><IoIosArrowDown/></span></div>
        <div className='flex items-center'><div>PRODUCTS</div> <span><IoIosArrowDown/></span></div>
         <div className='flex items-center'><div>CONTACT</div> </div></div></div>
