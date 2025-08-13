@@ -15,37 +15,42 @@ import Home from '../pages/Home';
 function Navbar() {
   return (
     <div className=' '>
-        <div className='bg-gray-100 flex items-center justify-between w-[100%] h-[50px] px-8'>
-            <div className='flex items-center w-[50%] justify-start gap-16 h-[100%]'>
-         <div className='bg-white flex justify-center items-center w-[200px] h-[100%] border-[1px] border-gray-200 '>
-            <img src={LOGO}/>
+        <div className='bg-gray-100 flex items-center justify-between w-[100%] md:h-[50px] h-[80px] '>
+            <div className='flex md:items-center lg:w-[50%] w-[100%] justify-start md:gap-16 gap-1 h-[100%] px-8'>
+         <div className='bg-white flex justify-center items-center md:w-[200px] md:h-[100%] border-[1px] border-gray-200 '>
+            <img src={LOGO} className=''/>
          </div>
-         <div className='flex relative w-[250px] '>
-         <div className=''><input placeholder='Search anything...' className='rounded-full w-[250px] p-2 text-xs'/></div>
-         <div className='absolute right-0 bg-[#362526] text-orange-400 size-8 flex justify-center items-center rounded-full'> <IoSearch /></div></div>
+         <div className='md:flex relative w-[250px] hidden'>
+         <div className='md:block '>
+      <input placeholder='Search anything...' 
+      className='rounded-full w-[250px] p-2 text-xs'/></div>
+         <div className='absolute right-0 bg-[#362526]
+          text-orange-400 size-8 md:flex justify-center items-center rounded-full hidden'> <IoSearch /></div></div>
          </div>
          <div className='flex items-center gap-1'>
             <div className='text-2xl'><FaPhone/></div>
             <div>
             <div className='text-xs'>help line (24/7)</div>
-         <div className='font-bold'>+91 8619818765</div></div></div>
-         <div className='flex text-[#362526] justify-between gap-6 text-xl'>
+         <div className='md:font-bold text-sm'>+91 8619818765</div></div></div>
+         <div className='md:flex text-[#362526] justify-between gap-6 text-xl  hidden'>
             <div><MdOutlineCurrencyExchange /></div>
             <div><IoMdHeart /></div>
             <div><IoPerson /></div>
             <div><FaShoppingBag /></div>
          </div>
         </div>
-        <div className='px-8 flex justify-between w-[100%] h-[50px] bg-[#e9e7e8]'>
+        <div className='px-8 flex justify-between w-[100%] h-[50px] bg-[#e9e7e8] '>
         <div className='flex  justify-between gap-2'>
         <div className='flex items-center bg-gray-100 justify-center w-[200px] h-[100%] border-[1px] border-gray-200 '><div>CATEGORIES</div> <span><IoIosArrowDown/></span></div>
-        <div className='flex gap-6'>
+        <div className='md:flex gap-6 hidden'>
         <NavLink to='/home' className='flex items-center'><div>HOME</div> <span><IoIosArrowDown/></span></NavLink>
        <div className='flex items-center'><div>PAGES</div> <span><IoIosArrowDown/></span></div>
        <div className='flex items-center'><div>PRODUCTS</div> <span><IoIosArrowDown/></span></div>
-        <div className='flex items-center'><div>CONTACT</div> </div></div></div>
+        <div className='flex items-center'><div>CONTACT</div> </div></div>
+       </div>
         <div className='text-orange-400 bg-[#362526] w-[50px] text-2xl flex justify-center items-center'> <div>< FaGripLines /></div></div>
         </div>
+        
     </div>
   )
 }
