@@ -64,7 +64,7 @@ const Home = () => {
             </div>
             <div className='mt-4'><img src={banner6} className='md:w-[330px] w-[300px]  md:h-[200px] h-[300px] pb-4 '/></div>
           </div>
-          <div className='md:w-[100%] w-[100%] md:h-[60%] h-[100%]'><img src={banner7} className='w-[350px] h-[300px] ' /></div>
+          <div className='md:w-[100%] w-[100%] md:h-[60%] h-[100%]'><img src={banner7} className='w-[350px] h-[285px] ' /></div>
         </div>
       </div>
 </div>
@@ -109,6 +109,14 @@ const Home = () => {
   </div>
   <div className='bg-orange-300 w-[100%] lg:h-[25%] h-[10%] flex justify-center items-center font-serif'>12k+ User Active Everyday </div>
   </div>
+<div className='h-[100vh] rounded-lg border-[1px] border-gray-300  my-8'>
+
+   <div className='flex justify-between p-8' >
+    <div className='text-xl font-serif text-[#362526] font-bold'>Hand-Picked Food</div>
+    <div className='flex items-center gap-2 group hover:text-lg hover:underline '>View All <span className='text-2xl group-hover:text-4xl hover-underline'><IoIosArrowRoundForward /></span></div>
+  </div>
+  <div></div>
+</div>
     </div>
   );
 };
