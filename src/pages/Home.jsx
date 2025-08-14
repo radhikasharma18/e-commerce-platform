@@ -64,7 +64,7 @@ const Home = () => {
             </div>
             <div className='mt-4'><img src={banner6} className='md:w-[330px] w-[300px]  md:h-[200px] h-[300px] pb-4 '/></div>
           </div>
-          <div className='md:w-[100%] w-[100%] md:h-[60%] h-[100%]'><img src={banner7} className='w-[350px] h-[285px] ' /></div>
+          <div className='md:w-[96%] w-[100%] md:h-[60%] h-[100%]'><img src={banner7} className='' /></div>
         </div>
       </div>
 </div>
