@@ -10,10 +10,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaGripLines } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import Home from '../pages/Home';
+import { useState } from 'react';
 
 
 function Navbar() {
+
+   const [menuOpen , setMenuOpen] =useState(false);
   return (
+   <>
     <div className=' '>
         <div className='bg-gray-100 flex items-center justify-between w-[100%] md:h-[50px] h-[80px] '>
             <div className='flex md:items-center lg:w-[50%] w-[100%] justify-start md:gap-16 gap-1 h-[100%] px-8'>
@@ -38,6 +42,7 @@ function Navbar() {
             <div><IoPerson /></div>
             <div><FaShoppingBag /></div>
          </div>
+         
         </div>
         <div className='px-8 flex justify-between w-[100%] h-[50px] bg-[#e9e7e8] '>
         <div className='flex  justify-between gap-2'>
@@ -48,10 +53,18 @@ function Navbar() {
        <div className='flex items-center'><div>PRODUCTS</div> <span><IoIosArrowDown/></span></div>
         <div className='flex items-center'><div>CONTACT</div> </div></div>
        </div>
-        <div className='text-orange-400 bg-[#362526] w-[50px] text-2xl flex justify-center items-center'> <div>< FaGripLines /></div></div>
+        <div className='text-orange-400 bg-[#362526] w-[50px] text-2xl flex justify-center items-center'> <button onClick={()=>setMenuOpen(!menuOpen)}>< FaGripLines /></button></div>
         </div>
         
-    </div>
+      </div>
+       <div className={`${menuOpen?"flex flex-col":"hidden"}
+       "flex gap-6 md:hidden "`}>
+         
+        <NavLink to='/home' className='flex  items-center'><div>HOME</div> <span><IoIosArrowDown/></span></NavLink>
+       <div className='flex items-center'><div>PAGES</div> <span><IoIosArrowDown/></span></div>
+       <div className='flex items-center'><div>PRODUCTS</div> <span><IoIosArrowDown/></span></div>
+        <div className='flex items-center'><div>CONTACT</div> </div></div>
+        </>
   )
 }
 

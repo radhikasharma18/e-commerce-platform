@@ -32,7 +32,15 @@ import { GiVanillaFlower } from "react-icons/gi";
 import { IoHeadsetSharp } from "react-icons/io5";
 import dog from '../assets/sale_dog.png.png'
 import { IoMdMail } from "react-icons/io";
-import cat from '../assets/sale_cat.png.png'
+import cat from '../assets/sale_cat.png.png';
+import logo from '../assets/banner_img.png.png';
+import logo1 from '../assets/banner_logo.png.png';
+import Animalcard from "./Animalcard";
+import dog1 from '../assets/div1.img.png';
+import dog2 from '../assets/div.img.png';
+import blog from '../assets/blog2.jpg.png';
+import blog2 from '../assets/blog3.jpg.png';
+import Footer from "../components/Footer";
 
 const Home = () => {
   const productlist = [
@@ -140,6 +148,7 @@ const Home = () => {
     
   ];
   return (
+    <>
     <div className="md:p-8 p-0 ">
       <div className="md:h-[100vh] h-[160vh] w-[100%]  flex flex-col md:flex-row">
         <div className="md:w-[80%] w-[100%]">
@@ -298,7 +307,7 @@ const Home = () => {
           </div>
         </div>
         <div className="relative  mx-4 flex flex-row lg:justify-start justify-center">
-          <div className="flex gap-4 md:gap-2 mt-16 flex-col md:flex-row px-8">
+          <div className="flex gap-4 md:gap-2 mt-16 flex-col md:flex-row px-8 items-between">
             {productlist.map((Product, index) => (
               <Productcard
                 key={index}
@@ -461,7 +470,85 @@ const Home = () => {
         </div>
         </div>
       </div>
-    </div>
+      <div className='bg-[#e9e7e8] md:h-[20vh] h-[60vh] mt-10 rounded-lg flex flex-col md:flex-row justify-between items-center md:p-4 p-8'>
+        <div> <img src={logo1}/></div>
+       <div> <img src={logo}/></div>
+        <div><div className="text-[#573e3f]">Pay with 4 installment,0% interest</div>
+        <div className="text-4xl text-[#422f30]"><span className="font-bold">Buy Now,</span>Pay Letter</div></div>
+        <div><button className="bg-white rounded-lg p-2 hover:scale-105 ">Discover Now</button></div>
+
+        </div>
+        <div className="mt-10 p-4 md:h-[90vh] h-[250vh]  border-[1px] border-gray-500 rounded-lg">
+          <div className="flex  flex-col md:flex-row justify-between ">
+            <div className="text-4xl font-serif">Best selling Product</div>
+            <div className="flex  flex-col md:flex-row gap-2 text-xs md:mt-0 mt-10">
+              <div className="border-[1px] border-gray-300 rounded-lg p-2 hover:bg-[#573e3f] hover:text-white">Featured</div>
+              <div className="border-[1px] border-gray-300 rounded-lg p-2 hover:bg-[#573e3f] hover:text-white">Pregnancy & Postpartum</div>
+              <div className="border-[1px] border-gray-300 rounded-lg p-2 hover:bg-[#573e3f] hover:text-white">Milk & Food</div>
+              <div className="border-[1px] border-gray-300 rounded-lg p-2 hover:bg-[#573e3f] hover:text-white">Diapers & wipes</div>
+              <div className="border-[1px] border-gray-300 rounded-lg p-2 hover:bg-[#573e3f] hover:text-white">infant</div>
+              <div className="border-[1px] border-gray-300 rounded-lg p-2 hover:bg-[#573e3f] hover:text-white">Strollers</div>
+            </div>
+          </div>
+         <div className="flex gap-8 mt-16 flex-col md:flex-row text-sm justify-between">
+            {productlist.map((Product, index) => (
+              <Animalcard
+                key={index}
+                sales={Product.label}
+                name={Product.name}
+                price={Product.price}
+                salesprice={Product.salesprice}
+                picture={Product.Image}
+                vector={Product.picture}
+                instock={Product.instock}
+                ship={Product.ship}
+                likes={Product.likes}
+                stock={Product.stock}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="mt-10 p-4 md:h-[60vh] h-[120vh]  border-[1px] border-gray-500 rounded-lg" >
+           <div className="flex justify-between p-8">
+          <div className="text-xl font-serif text-[#362526] font-bold">
+            Our Blog 
+          </div>
+          <div className="flex items-center gap-2 group hover:text-lg hover:underline ">
+            VIEW All{" "}
+            <span className="text-2xl group-hover:text-4xl hover-underline">
+              <IoIosArrowRoundForward />
+            </span>
+          </div>
+        </div>
+          <div className="flex flex-col md:flex-row gap-6 md:gap-0 md:justify-between items-center">
+            <div className="w-[350px] md:h-[230px] h-[330px] bg-cover bg-center rounded-lg flex flex-col justify-end p-4"
+                               style={{ backgroundImage: `url(${dog2})` }}>
+                                <div className="text-white text-lg font-semibold ">Babies in Winter: How to protect your newborn in cold weather</div>
+                                <div className="text-white text-sm font-extralight">45 Minutes ago in Experience</div>
+                               </div>
+
+            <div className="w-[350px] h-[230px] flex flex-col justify-between items-center">
+              <div className="flex border-b-[1px] border-gray-400 pb-4 gap-4"><img src={blog} className="w-[120px] h-[100px] rounded-lg"/>
+              <div className="flex flex-col justify-between">
+                <div className="font-bold">Omicron in kids: Here's what parents Should Know</div>
+                <div className="text-gray-500">45 minutes ago in Pet,food</div></div></div>
+              <div className="flex gap-4 "><img src={blog2} className="w-[120px] h-[100px]  rounded-lg"/>
+              <div className="flex flex-col justify-between">
+                <div className="font-bold">Fun  Facts about January Babies</div>
+                <div className="text-gray-500">10 days ago in pets ,food</div></div></div>
+            </div>
+            <div className="w-[350px] md:h-[230px] h-[330px] bg-cover bg-center rounded-lg flex flex-col justify-end p-4"
+                               style={{ backgroundImage: `url(${dog1})` }}>
+                                <div className="text-white text-lg font-semibold ">Babies in Winter: How to protect your newborn in cold weather</div>
+                                <div className="text-white text-sm font-extralight">45 Minutes ago in Experience</div>
+                               </div>
+
+          </div>
+        </div>
+        <div></div>
+      </div>
+       <Footer />
+       </>
   );
 };
 

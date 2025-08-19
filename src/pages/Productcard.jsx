@@ -5,6 +5,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const Productcard = (props) => {
   return (
+    
     <div className="relative group md:h-[250px] h-[320px] md:w-[220px] w-[300px] p-6  rounded-lg  transition-all duration-300">
       <div className="flex justify-between">
         <div className="bg-[#f6ab4a] text-white rounded-md px-2 h-5 flex justify-center items-center text-xs">
