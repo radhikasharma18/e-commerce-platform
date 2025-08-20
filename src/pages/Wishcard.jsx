@@ -36,11 +36,12 @@ const Wishcard = (props) => {
         <span className="font-bold text-[#f6ab4a] ">{props.salesprice}</span>{" "}
         <span className="line-through text-gray-600">{props.price}</span>
       </div>
-      <div className="border-green-500 text-green-500 border-[1.5px] rounded-md text-xs w-[80px]">
+      <div className="border-green-500 text-green-500 border-[1.5px] rounded-md text-xs w-[80px] p-1">
+        
         {props.ship}
       </div>
 
-      <div>{props.stock == "In stock" ? <div className="flex items-center text-green-600"><FaCheckCircle /> In Stock</div> :<div className=" flex items-center text-red-600"> <ImCross /> Out of Stock </div>}</div>
+      <div>{props.stock == "In stock" ? <div className="flex items-center text-green-600 mt-2"><FaCheckCircle /> In Stock</div> :<div className=" flex items-center text-red-600 mt-2"> <ImCross /> Out of Stock </div>}</div>
     </div>
  
 

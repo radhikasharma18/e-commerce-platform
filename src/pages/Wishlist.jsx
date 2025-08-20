@@ -17,7 +17,7 @@ const Wishlist = () => {
           label: "$100",
           price: "$500",
           likes: "(5)",
-          ship: "free shiping",
+          ship: "Free Shiping",
           stock: "In stock",
         },
         {
@@ -61,7 +61,7 @@ const Wishlist = () => {
           label: "$3.00",
           price: "$12",
           likes: "(152)",
-          ship: "Free Shipping",
+          ship: "Free Shiping",
           stock: "Out of Stock",
         },
       ];
