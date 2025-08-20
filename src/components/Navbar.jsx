@@ -52,7 +52,7 @@ const handleViewWish=()=>{
             <div className='text-xs text-gray-700'>help line (24/7)</div>
          <div className='md:font-bold font-semibold text-sm'>+918619818765</div></div></div>
          <div className='md:flex text-[#362526] justify-between gap-6 text-xl hidden'>
-            <button onClick={(handleViewLogin)} className='hover:scale-125'><MdOutlineCurrencyExchange /></button>
+            <button onClick={(handleViewAll)} className='hover:scale-125'><MdOutlineCurrencyExchange /></button>
             <button onClick={(handleViewWish)} className='hover:scale-125'><IoMdHeart /></button>
             <button onClick={(handleViewLogin)} className='hover:scale-125'><IoPerson /></button>
             <button onClick={(handleViewCart)} className='hover:scale-125'><FaShoppingBag /></button>
