@@ -40,7 +40,7 @@ import dog1 from '../assets/div1.img.png';
 import dog2 from '../assets/div.img.png';
 import blog from '../assets/blog2.jpg.png';
 import blog2 from '../assets/blog3.jpg.png';
-import Footer from "../components/Footer";
+
 
 const Home = () => {
   const productlist = [
@@ -233,57 +233,57 @@ const Home = () => {
           <div className="text-lg font-serif text-[#362526] font-bold">
             Pets Food Categories
           </div>
-          <div className="flex items-center gap-2 group hover:text-lg hover:underline ">
+          <div className="flex items-center gap-2 group hover:underline ">
             View All{" "}
-            <span className="text-2xl group-hover:text-4xl hover-underline">
+            <span className="text-2xl">
               <IoIosArrowRoundForward />
             </span>
           </div>
         </div>
         <div className="flex justify-between flex-wrap md:gap-0 gap-8 px-8">
-          <div className="flex flex-col items-center justify-between size-28">
+          <div className="flex flex-col items-center justify-between size-28 hover:scale-110">
             <div className="rounded-full border-[1px] border-gray-200 size-20 flex justify-center items-center ">
-              <img src={cat1} className="w-8 h-10" />
+              <img src={cat1} className="w-8 h-10 " />
             </div>
-            <div className="text-xs font-serif text-[#362526]">CAT</div>
+            <div className="text-xs font-serif text-[#362526] ">CAT</div>
           </div>
-          <div className="flex flex-col items-center justify-between size-28">
+          <div className="flex flex-col items-center justify-between size-28 hover:scale-110">
             <div className="rounded-full border-[1px] border-gray-200 size-20 flex justify-center items-center">
               <img src={cat2} className="w-8 h-10" />
             </div>
             <div className="text-xs font-serif text-[#362526]">DOG</div>
           </div>
-          <div className="flex flex-col items-center justify-between size-28">
+          <div className="flex flex-col items-center justify-between size-28 hover:scale-110">
             <div className="rounded-full border-[1px] border-gray-200 size-20 flex justify-center items-center">
               <img src={cat3} className="w-10 " />
             </div>
             <div className="text-xs font-serif text-[#362526]">PARROT</div>
           </div>
-          <div className="flex flex-col items-center justify-between size-28">
+          <div className="flex flex-col items-center justify-between size-28 hover:scale-110">
             <div className="rounded-full border-[1px] border-gray-200 size-20 flex justify-center items-center">
               <img src={cat4} className="w-8 h-10" />
             </div>
             <div className="text-xs font-serif text-[#362526]">FISH</div>
           </div>
-          <div className="flex flex-col items-center justify-between size-28">
+          <div className="flex flex-col items-center justify-between size-28 hover:scale-110">
             <div className="rounded-full border-[1px] border-gray-200 size-20 flex justify-center items-center">
               <img src={cat5} className="w-8 h-10" />
             </div>
             <div className="text-xs font-serif text-[#362526]">HORSE</div>
           </div>
-          <div className="flex flex-col items-center justify-between size-28">
+          <div className="flex flex-col items-center justify-between size-28 hover:scale-110">
             <div className="rounded-full border-[1px] border-gray-200 size-20 flex justify-center items-center">
               <img src={cat6} className="w-8 h-10" />
             </div>
             <div className="text-xs font-serif text-[#362526]">RABBIT</div>
           </div>
-          <div className="flex flex-col items-center justify-between size-28">
+          <div className="flex flex-col items-center justify-between size-28 hover:scale-110">
             <div className="rounded-full border-[1px] border-gray-200 size-20 flex justify-center items-center">
               <img src={cat7} className="w-8 h-10" />
             </div>
             <div className="text-xs font-serif text-[#362526]">HEN</div>
           </div>
-          <div className="flex flex-col items-center justify-between size-28">
+          <div className="flex flex-col items-center justify-between size-28 hover:scale-110">
             <div className="rounded-full border-[1px] border-gray-200 size-20 flex justify-center items-center">
               <img src={cat8} className="w-8 h-10" />
             </div>
@@ -299,9 +299,9 @@ const Home = () => {
           <div className="text-xl font-serif text-[#362526] font-bold">
             Hand-Picked Food
           </div>
-          <div className="flex items-center gap-2 group hover:text-lg hover:underline ">
+          <div className="flex items-center gap-2 group  hover:underline ">
             View All{" "}
-            <span className="text-2xl group-hover:text-4xl hover-underline">
+            <span className="text-2xl ">
               <IoIosArrowRoundForward />
             </span>
           </div>
@@ -490,7 +490,7 @@ const Home = () => {
               <div className="border-[1px] border-gray-300 rounded-lg p-2 hover:bg-[#573e3f] hover:text-white">Strollers</div>
             </div>
           </div>
-         <div className="flex gap-8 mt-16 flex-col md:flex-row text-sm justify-between">
+         <div className="flex gap-8 mt-16 flex-col md:flex-row text-sm md:justify-between items-center">
             {productlist.map((Product, index) => (
               <Animalcard
                 key={index}
@@ -508,24 +508,25 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <div className="mt-10 p-4 md:h-[60vh] h-[120vh]  border-[1px] border-gray-500 rounded-lg" >
+        <div className="mt-10 p-4 md:h-[70vh] h-[120vh]  border-[1px] border-gray-500 rounded-lg" >
            <div className="flex justify-between p-8">
           <div className="text-xl font-serif text-[#362526] font-bold">
             Our Blog 
           </div>
-          <div className="flex items-center gap-2 group hover:text-lg hover:underline ">
+          <div className="flex items-center gap-2 hover:underline ">
             VIEW All{" "}
-            <span className="text-2xl group-hover:text-4xl hover-underline">
+            <span className="text-2xl ">
               <IoIosArrowRoundForward />
             </span>
           </div>
         </div>
           <div className="flex flex-col md:flex-row gap-6 md:gap-0 md:justify-between items-center">
-            <div className="w-[350px] md:h-[230px] h-[330px] bg-cover bg-center rounded-lg flex flex-col justify-end p-4"
+            <div className="w-[350px] md:h-[230px] h-[330px] bg-cover bg-center  rounded-2xl  group relative"
                                style={{ backgroundImage: `url(${dog2})` }}>
-                                <div className="text-white text-lg font-semibold ">Babies in Winter: How to protect your newborn in cold weather</div>
-                                <div className="text-white text-sm font-extralight">45 Minutes ago in Experience</div>
-                               </div>
+                                 <div className="absolute inset-0 hover:bg-black/50 rounded-2xl flex flex-col justify-end p-4"  >
+                                <div className="text-white text-lg font-semibold group-hover:text-xl ">Babies in Winter: How to protect your newborn in cold weather</div>
+                                <div className="text-white text-sm font-extralight ">45 Minutes ago in Experience</div>
+                               </div></div>
 
             <div className="w-[350px] h-[230px] flex flex-col justify-between items-center">
               <div className="flex border-b-[1px] border-gray-400 pb-4 gap-4"><img src={blog} className="w-[120px] h-[100px] rounded-lg"/>
@@ -537,17 +538,18 @@ const Home = () => {
                 <div className="font-bold">Fun  Facts about January Babies</div>
                 <div className="text-gray-500">10 days ago in pets ,food</div></div></div>
             </div>
-            <div className="w-[350px] md:h-[230px] h-[330px] bg-cover bg-center rounded-lg flex flex-col justify-end p-4"
+           <div className="w-[350px] md:h-[230px] h-[330px] bg-cover bg-center  rounded-2xl  group relative"
                                style={{ backgroundImage: `url(${dog1})` }}>
-                                <div className="text-white text-lg font-semibold ">Babies in Winter: How to protect your newborn in cold weather</div>
-                                <div className="text-white text-sm font-extralight">45 Minutes ago in Experience</div>
-                               </div>
+                                 <div className="absolute inset-0 hover:bg-black/50 rounded-2xl flex flex-col justify-end p-4"  >
+                                <div className="text-white text-lg font-semibold group-hover:text-xl ">Babies in Winter: How to protect your newborn in cold weather</div>
+                                <div className="text-white text-sm font-extralight ">45 Minutes ago in Experience</div>
+                               </div></div>
 
           </div>
         </div>
         <div></div>
       </div>
-       <Footer />
+       
        </>
   );
 };
