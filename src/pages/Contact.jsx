@@ -12,8 +12,8 @@ const Contact = () => {
       className=" flex justify-center bg-[#d4cec0]"
       style={{ backgroundImage: `url(${paws})` }}
     >
-      <div className="h-[100vh] w-[80vw] flex  bg-white  ">
-        <div className="bg-white h-full w-[60%] mx-8 px-16 p-8 flex flex-col justify-between">
+      <div className="lg:h-[100vh] h-[150vh] w-[80vw] flex flex-col lg:flex-row bg-white  ">
+        <div className="bg-white h-full lg:w-[60%] w-[100%] mx-8 px-16 p-8 flex flex-col justify-between">
           <div className="font-serif text-2xl text-[#362526]">
             READY TO WORK WITH US
           </div>
@@ -107,8 +107,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className=" h-full w-[40%] px-8 flex flex-col gap-4">
-          <div className="bg-[#d4cec0] w-full h-3/5 rounded-b-lg p-4 flex flex-col gap-4">
+        <div className=" h-full lg:w-[40%] w-[80vw] lg:px-8 px-0 flex lg:flex-col flex-row  gap-4 bg-white">
+          <div className="bg-[#d4cec0] lg:w-full w-1/2 h-3/5 rounded-b-lg p-4 flex flex-col gap-4">
             <div>
               <div className="text-xs text-[#6e5355]">
                 UNITED STATES(HEAD QUATER)
@@ -147,7 +147,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="w-full ">
+          <div className="lg:w-full w-1/2 ">
             <img src={black} className="w-[300px] h-[215px] rounded-lg" />
           </div>
         </div>

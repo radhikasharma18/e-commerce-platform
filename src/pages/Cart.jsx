@@ -14,7 +14,7 @@ const Cart = () => {
        navigate("/")
      }
   return (
-    <div><div className='md:mx-8 mt-8 mx-6 px-6 md:px-8 flex flex-col gap-16'>
+    <div className='flex'><div className='md:mx-8 mt-8 mx-6 px-6 md:px-8 flex flex-col gap-16 w-[70%] border-[#423b3c] border-[1px] rounded-lg p-2'>
 
         <div className='flex justify-between items-center shadow-2xl bg-[#423b3c]  w-[100%] h-[50px] text-center border-[1.5px] border-gray-200  rounded-lg text-[#f6ab4a]'>
         <div className=' w-[25%]'>Product</div>

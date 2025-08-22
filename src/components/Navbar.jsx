@@ -105,12 +105,12 @@ function Navbar() {
                   <IoIosArrowDown />
                 </span>
               </div>
-              <div className="flex items-center hover:scale-105">
+              <NavLink to="/product" className="flex items-center hover:scale-105">
                 <div>PRODUCTS</div>{" "}
                 <span>
                   <IoIosArrowDown />
                 </span>
-              </div>
+              </NavLink>
               <NavLink
                 to="/contact"
                 className="flex items-center hover:scale-105"
