@@ -20,6 +20,7 @@ import {
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [categories, setCategories] = useState(false);
 
   const navigate = useNavigate();
   const handleViewCart = () => {
@@ -87,7 +88,11 @@ function Navbar() {
         <div className="md:px-8 px-2 flex justify-between w-[100%] h-[50px] bg-[#e9e7e8] ">
           <div className="flex  justify-between gap-2">
             <div className="flex items-center bg-gray-100 justify-center w-[200px] h-[100%] border-[1px] border-gray-200 hover:scale-105 ">
-              <div>CATEGORIES</div>{" "}
+              <div>
+                <button onClick={() => setCategories(!categories)}>
+                  CATEGORIES
+                </button>
+              </div>{" "}
               <span>
                 <IoIosArrowDown />
               </span>
@@ -105,7 +110,10 @@ function Navbar() {
                   <IoIosArrowDown />
                 </span>
               </div>
-              <NavLink to="/product" className="flex items-center hover:scale-105">
+              <NavLink
+                to="/product"
+                className="flex items-center hover:scale-105"
+              >
                 <div>PRODUCTS</div>{" "}
                 <span>
                   <IoIosArrowDown />
@@ -127,6 +135,64 @@ function Navbar() {
           </div>
         </div>
       </div>
+      <div className={`${categories ? "flex" : "hidden"}`}>
+        <div className=" absolute h-[30vh] w-[16vw]  bg-white mx-8 shadow-2xl p-4 ">
+          <div>
+            <NavLink
+              to="/petfood"
+              className="border-b-[1px] border-gray-400 font-serif hover:text-lg cursor-pointer"
+              onClick={() => setCategories(false)}
+            >
+              Pet Food
+            </NavLink>
+          </div>
+          <div>
+            <NavLink
+              to="/eletronic"
+              className="border-b-[1px] border-gray-400 font-serif hover:text-lg cursor-pointer"
+              onClick={() => setCategories(false)}
+            >
+              Electronic itmes
+            </NavLink>
+          </div>
+          <div>
+            <NavLink
+              to="/furniture"
+              className="border-b-[1px] border-gray-400 font-serif hover:text-lg cursor-pointer"
+              onClick={() => setCategories(false)}
+            >
+              Furniture
+            </NavLink>
+          </div>
+          <div>
+            <NavLink
+              to="/household"
+              className="border-b-[1px] border-gray-400 font-serif hover:text-lg cursor-pointer"
+              onClick={() => setCategories(false)}
+            >
+              Household Items
+            </NavLink>
+          </div>
+          <div>
+            <NavLink
+              to="/food"
+              className="border-b-[1px] border-gray-400 font-serif hover:text-lg cursor-pointer"
+              onClick={() => setCategories(false)}
+            >
+              Food
+            </NavLink>
+          </div>
+          <div>
+            <NavLink
+              to="/toy"
+              className=" font-serif hover:text-lg cursor-pointer"
+              onClick={() => setCategories(false)}
+            >
+              Toy
+            </NavLink>
+          </div>
+        </div>
+      </div>
       <div
         className={`${menuOpen ? "flex flex-col" : "hidden"}
        "flex gap-3 lg:hidden  bg-gray-100 "`}
@@ -140,33 +206,54 @@ function Navbar() {
             <IoIosArrowDown />
           </span>
         </NavLink>
-        <div className="flex items-center border-b-[1px] border-gray-400 px-16">
+        <NavLink
+          to="/pages"
+          className="flex items-center border-b-[1px] border-gray-400 px-16"
+        >
           <div>PAGES</div>{" "}
           <span>
             <IoIosArrowDown />
           </span>
-        </div>
-        <div className="flex items-center border-b-[1px] border-gray-400 px-16">
+        </NavLink>
+        <NavLink
+          to="/product"
+          className="flex items-center border-b-[1px] border-gray-400 px-16"
+        >
           <div>PRODUCTS</div>{" "}
           <span>
             <IoIosArrowDown />
           </span>
-        </div>
-        <div className="flex items-center border-b-[1px] border-gray-400 px-16">
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className="flex items-center border-b-[1px] border-gray-400 px-16"
+        >
           <div>CONTACT</div>{" "}
-        </div>
-        <div className="flex items-center border-b-[1px] border-gray-400 px-16">
+        </NavLink>
+        <NavLink
+          to="/exchange"
+          className="flex items-center border-b-[1px] border-gray-400 px-16"
+        >
           <div>EXCHANGE</div>{" "}
-        </div>
-        <div className="flex items-center border-b-[1px] border-gray-400 px-16">
+        </NavLink>
+        <NavLink
+          to="/cart"
+          className="flex items-center border-b-[1px] border-gray-400 px-16"
+        >
           <div>CART</div>{" "}
-        </div>
-        <div className="flex items-center border-b-[1px] border-gray-400 px-16">
+        </NavLink>
+        <NavLink
+          to="/wishlist"
+          className="flex items-center border-b-[1px] border-gray-400 px-16"
+        >
           <div>WISHLIST</div>{" "}
-        </div>
-        <div className="flex items-center border-b-[1px] border-gray-400 px-16">
+        </NavLink>
+        <NavLink
+          to="/login"
+          className="flex items-center border-b-[1px] border-gray-400 px-16"
+        >
           <div>LOGIN</div>{" "}
-        </div>
+        </NavLink>
       </div>
     </>
   );

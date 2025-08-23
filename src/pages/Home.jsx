@@ -322,7 +322,6 @@ const Home = () => {
                   salesprice={Product.salesprice}
                   picture={Product.Image}
                   vector={Product.picture}
-                  instock={Product.instock}
                   ship={Product.ship}
                   likes={Product.likes}
                   stock={Product.stock}
@@ -365,7 +364,7 @@ const Home = () => {
         </div>
 
         <div className="md:h-[100vh] h-[270vh] flex  md:flex-row flex-col mt-8  ">
-          <div className="bg-[#362526] md:h-[85vh] h-[82vh] rounded-l-lg  md:w-[25%] w-[100%]">
+          <div className="bg-[#362526] md:h-[79.4vh] h-[82vh] rounded-l-lg  md:w-[25%] w-[100%]">
             <div className="h-[50%]">
               <div className="text-2xl text-white flex items-center justify-center">
                 Flash Sale
@@ -401,7 +400,7 @@ const Home = () => {
             </div>
           </div>
           <div className="md:h-full h-[160vh] md:w-[75%] w-[100%] rounded-r-lg border-[1px] md:border-gray-400 border-transparent">
-            <div className=" md:h-[85vh] h-[160vh] w-[100%] rounded-r-lg border-b-[1px] md:border-gray-400 border-transparent">
+            <div className=" md:h-[79.4vh] h-[160vh] w-[100%] rounded-r-lg border-b-[1px] md:border-gray-400 border-transparent">
               <div className="relative   flex flex-row lg:justify-start justify-center">
                 <div className="flex gap-2 mt-16 flex-col md:flex-row text-sm">
                   {product.map((Product, index) => (
@@ -444,7 +443,7 @@ const Home = () => {
           </div>
         </div>
         <div className="md:h-[100vh] h-[270vh] flex flex-col md:flex-row mt-8  ">
-          <div className="bg-[#f6ab4a] h-[78vh] md:h-[84vh] rounded-l-lg  md:w-[25%] w-[100%]">
+          <div className="bg-[#f6ab4a] h-[78vh] md:h-[78vh] rounded-l-lg  md:w-[25%] w-[100%]">
             <div className="h-[50%]">
               <div className="text-2xl text-white flex items-center justify-center">
                 Flash Sale
@@ -480,7 +479,7 @@ const Home = () => {
             </div>
           </div>
           <div className="h-full md:w-[75%]  w-[100%] rounded-r-lg border-[1px] md:border-gray-400 border-transparent ">
-            <div className=" md:h-[84vh] h-[160vh] w-[100%] rounded-r-lg border-b-[1px] md:border-gray-400 border-transparent ">
+            <div className=" md:h-[78vh] h-[160vh] w-[100%] rounded-r-lg border-b-[1px] md:border-gray-400 border-transparent ">
               <div className="relative   flex flex-row lg:justify-start justify-center">
                 <div className="flex gap-2 mt-16 flex-col md:flex-row text-sm">
                   {product.map((Product, index) => (

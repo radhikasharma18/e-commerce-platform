@@ -1,0 +1,106 @@
+{
+  "toys": [
+    {
+      "id": 1,
+      "name": "Robo Racer",
+      "brand": "PlayMax",
+      "price": 699,
+      "rating": 4.5,
+      "ageGroup": "6-12",
+      "category": "cars",
+      "stock": 24,
+      "image": "https://example.com/toys/robo-racer.png",
+      "description": "Friction-powered racing car with lights."
+    },
+    {
+      "id": 2,
+      "name": "Block Builder 100",
+      "brand": "KidCraft",
+      "price": 1299,
+      "rating": 4.7,
+      "ageGroup": "3-8",
+      "category": "blocks",
+      "stock": 12,
+      "image": "https://example.com/toys/block-builder.png",
+      "description": "100-piece colorful building blocks set."
+    }
+    ,
+    {
+      "id": 2,
+      "name": "Block Builder 100",
+      "brand": "KidCraft",
+      "price": 1299,
+      "rating": 4.7,
+      "ageGroup": "3-8",
+      "category": "blocks",
+      "stock": 12,
+      "image": "https://example.com/toys/block-builder.png",
+      "description": "100-piece colorful building blocks set."
+    }
+    ,
+    {
+      "id": 2,
+      "name": "Block Builder 100",
+      "brand": "KidCraft",
+      "price": 1299,
+      "rating": 4.7,
+      "ageGroup": "3-8",
+      "category": "blocks",
+      "stock": 12,
+      "image": "https://example.com/toys/block-builder.png",
+      "description": "100-piece colorful building blocks set."
+    }
+    ,
+    {
+      "id": 2,
+      "name": "Block Builder 100",
+      "brand": "KidCraft",
+      "price": 1299,
+      "rating": 4.7,
+      "ageGroup": "3-8",
+      "category": "blocks",
+      "stock": 12,
+      "image": "https://example.com/toys/block-builder.png",
+      "description": "100-piece colorful building blocks set."
+    }
+    ,
+    {
+      "id": 2,
+      "name": "Block Builder 100",
+      "brand": "KidCraft",
+      "price": 1299,
+      "rating": 4.7,
+      "ageGroup": "3-8",
+      "category": "blocks",
+      "stock": 12,
+      "image": "https://example.com/toys/block-builder.png",
+      "description": "100-piece colorful building blocks set."
+    }
+    ,
+    {
+      "id": 2,
+      "name": "Block Builder 100",
+      "brand": "KidCraft",
+      "price": 1299,
+      "rating": 4.7,
+      "ageGroup": "3-8",
+      "category": "blocks",
+      "stock": 12,
+      "image": "https://example.com/toys/block-builder.png",
+      "description": "100-piece colorful building blocks set."
+    }
+    ,
+    {
+      "id": 2,
+      "name": "Block Builder 100",
+      "brand": "KidCraft",
+      "price": 1299,
+      "rating": 4.7,
+      "ageGroup": "3-8",
+      "category": "blocks",
+      "stock": 12,
+      "image": "https://example.com/toys/block-builder.png",
+      "description": "100-piece colorful building blocks set."
+    }
+  ]
+}

@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import Wishlist from "./pages/Wishlist";
 import Contact from "./pages/Contact";
 import Product from "./pages/Product";
+import Toys from "./pages/Toys";
+import Food from "./pages/Food";
 
 function App() {
   return (
@@ -14,12 +16,13 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-       <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/wishlist" element={<Wishlist/>} />
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/product" element={<Product/>}/>
-
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/toy" element={<Toys />} />
+        <Route path="/food" element={<Food />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,0 +1,54 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Margherita Pizza",
+      "category": "Pizza",
+      "price": 299,
+      "rating": 4.6,
+      "stock": 12,
+      "image": "https://example.com/foods/pizza-margherita.png",
+      "description": "Classic cheese margherita with fresh basil leaves."
+    },
+    {
+      "id": 2,
+      "name": "Veggie Burger",
+      "category": "Burger",
+      "price": 149,
+      "rating": 4.3,
+      "stock": 25,
+      "image": "https://example.com/foods/veggie-burger.png",
+      "description": "Crispy veggie patty served with lettuce and cheese."
+    },
+    {
+      "id": 3,
+      "name": "Pasta Alfredo",
+      "category": "Pasta",
+      "price": 249,
+      "rating": 4.5,
+      "stock": 18,
+      "image": "https://example.com/foods/pasta-alfredo.png",
+      "description": "Creamy Alfredo pasta with mushrooms and cheese."
+    },
+    {
+      "id": 4,
+      "name": "Caesar Salad",
+      "category": "Salad",
+      "price": 199,
+      "rating": 4.2,
+      "stock": 30,
+      "image": "https://example.com/foods/caesar-salad.png",
+      "description": "Fresh lettuce, parmesan, and crunchy croutons."
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Cake",
+      "category": "Dessert",
+      "price": 349,
+      "rating": 4.8,
+      "stock": 10,
+      "image": "https://example.com/foods/chocolate-cake.png",
+      "description": "Rich chocolate layered cake with ganache topping."
+    }
+  ]
+}
