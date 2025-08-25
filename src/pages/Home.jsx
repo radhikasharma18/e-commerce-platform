@@ -163,7 +163,7 @@ const Home = () => {
                   <div className="text-orange-300 md:text-5xl text-2xl ">
                     eVolve
                   </div>
-                  <div className="text-white lg::text-5xl text-2xl md:mb-8 mb-4  ">
+                  <div className="text-white lg:text-5xl text-2xl md:mb-8 mb-4  ">
                     Quality Foods For Your pet
                   </div>
                 </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import product1 from "../assets/prod1.png";
 import product2 from "../assets/prod2.png";
 import product3 from "../assets/prod3.png";
@@ -8,7 +8,7 @@ import Vectore from "../assets/Vector.png";
 import Wishcard from "./Wishcard";
 
 const Wishlist = () => {
-  const productlist = [
+  const [productlistItems, setProductlistItems] = useState([
     {
       Image: product1,
       name: "Royal Canin Cat Dry Food Exigent 2kg",
@@ -64,11 +64,19 @@ const Wishlist = () => {
       ship: "Free Shiping",
       stock: "Out of Stock",
     },
-  ];
+  ]);
+
+  const handleDelete = (indexToDelete) => {
+    const updatedItems = productlistItems.filter(
+      (_, index) => index !== indexToDelete
+    );
+    setProductlistItems(updatedItems);
+  };
+
   return (
     <div className="md:h-[80vh] h-[230vh]">
-      <div className="flex gap-2 mt-16 flex-col md:flex-row text-sm lg:justify-between  lg:items-start items-center">
-        {productlist.map((Product, index) => (
+      <div className="flex gap-2 mt-16 flex-wrap flex-col md:flex-row text-sm lg:gap-6 lg:items-start items-center">
+        {productlistItems.map((Product, index) => (
           <Wishcard
             key={index}
             sales={Product.label}
@@ -77,10 +85,10 @@ const Wishlist = () => {
             salesprice={Product.salesprice}
             picture={Product.Image}
             vector={Product.picture}
-            instock={Product.instock}
+            stock={Product.stock}
             ship={Product.ship}
             likes={Product.likes}
-            stock={Product.stock}
+            onDelete={() => handleDelete(index)}
           />
         ))}
       </div>

@@ -102,5 +102,287 @@
       "image": "https://example.com/toys/block-builder.png",
       "description": "100-piece colorful building blocks set."
     }
+  ],
+
+  "foods": [
+    {
+      "id": 1,
+      "name": "Margherita Pizza",
+      "category": "Pizza",
+      "price": 299,
+      "rating": 4.6,
+      "stock": 12,
+      "image": "https://example.com/foods/pizza-margherita.png",
+      "description": "Classic cheese margherita with fresh basil leaves."
+    },
+    {
+      "id": 2,
+      "name": "Veggie Burger",
+      "category": "Burger",
+      "price": 149,
+      "rating": 4.3,
+      "stock": 25,
+      "image": "https://example.com/foods/veggie-burger.png",
+      "description": "Crispy veggie patty served with lettuce and cheese."
+    },
+    {
+      "id": 3,
+      "name": "Pasta Alfredo",
+      "category": "Pasta",
+      "price": 249,
+      "rating": 4.5,
+      "stock": 18,
+      "image": "https://example.com/foods/pasta-alfredo.png",
+      "description": "Creamy Alfredo pasta with mushrooms and cheese."
+    },
+    {
+      "id": 4,
+      "name": "Caesar Salad",
+      "category": "Salad",
+      "price": 199,
+      "rating": 4.2,
+      "stock": 30,
+      "image": "https://example.com/foods/caesar-salad.png",
+      "description": "Fresh lettuce, parmesan, and crunchy croutons."
+    },
+    {
+      "id": 5,
+      "name": "Chocolate Cake",
+      "category": "Dessert",
+      "price": 349,
+      "rating": 4.8,
+      "stock": 10,
+      "image": "https://example.com/foods/chocolate-cake.png",
+      "description": "Rich chocolate layered cake with ganache topping."
+    }
+  ],
+
+  "households": [
+    {
+      "id": 1,
+      "name": "Electric Kettle",
+      "category": "Kitchen",
+      "price": 1200,
+      "rating": 4.6,
+      "stock": 15,
+      "image": "https://via.placeholder.com/150",
+      "description": "1.5L stainless steel electric kettle with auto shut-off."
+    },
+    {
+      "id": 2,
+      "name": "Vacuum Cleaner",
+      "category": "Cleaning",
+      "price": 3500,
+      "rating": 4.4,
+      "stock": 8,
+      "image": "https://via.placeholder.com/150",
+      "description": "Portable vacuum cleaner with high suction power."
+    },
+    {
+      "id": 3,
+      "name": "Table Lamp",
+      "category": "Lighting",
+      "price": 900,
+      "rating": 4.2,
+      "stock": 20,
+      "image": "https://via.placeholder.com/150",
+      "description": "LED table lamp with adjustable brightness."
+    },
+    {
+      "id": 4,
+      "name": "Laundry Basket",
+      "category": "Storage",
+      "price": 550,
+      "rating": 4.0,
+      "stock": 25,
+      "image": "https://via.placeholder.com/150",
+      "description": "Foldable laundry basket made of durable fabric."
+    },
+    {
+      "id": 5,
+      "name": "Ceiling Fan",
+      "category": "Appliances",
+      "price": 2200,
+      "rating": 4.3,
+      "stock": 12,
+      "image": "https://via.placeholder.com/150",
+      "description": "3-blade ceiling fan with energy efficient motor."
+    },
+    {
+      "id": 2,
+      "name": "Vacuum Cleaner",
+      "category": "Cleaning",
+      "price": 3500,
+      "rating": 4.4,
+      "stock": 8,
+      "image": "https://via.placeholder.com/150",
+      "description": "Portable vacuum cleaner with high suction power."
+    }
+  ],
+  "furniture": [
+    {
+      "id": 1,
+      "name": "Sofa Set",
+      "category": "Living Room",
+      "price": 15000,
+      "rating": 4.6,
+      "stock": 5,
+      "image": "https://via.placeholder.com/200",
+      "description": "3-seater fabric sofa with comfortable cushions."
+    },
+    {
+      "id": 2,
+      "name": "Dining Table",
+      "category": "Dining Room",
+      "price": 12000,
+      "rating": 4.4,
+      "stock": 7,
+      "image": "https://via.placeholder.com/200",
+      "description": "Wooden dining table with 6 chairs."
+    },
+    {
+      "id": 3,
+      "name": "Bed Frame",
+      "category": "Bedroom",
+      "price": 18000,
+      "rating": 4.5,
+      "stock": 4,
+      "image": "https://via.placeholder.com/200",
+      "description": "Queen-size bed frame made of solid wood."
+    },
+    {
+      "id": 4,
+      "name": "Office Chair",
+      "category": "Office",
+      "price": 4500,
+      "rating": 4.2,
+      "stock": 10,
+      "image": "https://via.placeholder.com/200",
+      "description": "Ergonomic office chair with adjustable height and armrests."
+    },
+    {
+      "id": 5,
+      "name": "Bookshelf",
+      "category": "Storage",
+      "price": 3000,
+      "rating": 4.3,
+      "stock": 8,
+      "image": "https://via.placeholder.com/200",
+      "description": "5-tier wooden bookshelf for home and office use."
+    }
+  ],
+  
+  "electronics": [
+    {
+      "id": 1,
+      "name": "Smartphone",
+      "category": "Mobile",
+      "price": 25000,
+      "rating": 4.5,
+      "stock": 15,
+      "image": "https://via.placeholder.com/200",
+      "description": "Latest 5G smartphone with AMOLED display and 128GB storage."
+    },
+    {
+      "id": 2,
+      "name": "Laptop",
+      "category": "Computers",
+      "price": 55000,
+      "rating": 4.6,
+      "stock": 8,
+      "image": "https://via.placeholder.com/200",
+      "description": "Lightweight laptop with Intel i5 processor and 8GB RAM."
+    },
+    {
+      "id": 3,
+      "name": "Bluetooth Headphones",
+      "category": "Audio",
+      "price": 3500,
+      "rating": 4.3,
+      "stock": 20,
+      "image": "https://via.placeholder.com/200",
+      "description": "Wireless over-ear headphones with noise cancellation."
+    },
+    {
+      "id": 4,
+      "name": "Smartwatch",
+      "category": "Wearables",
+      "price": 5000,
+      "rating": 4.2,
+      "stock": 25,
+      "image": "https://via.placeholder.com/200",
+      "description": "Fitness tracking smartwatch with heart rate monitor."
+    },
+    {
+      "id": 5,
+      "name": "LED TV",
+      "category": "Home Entertainment",
+      "price": 40000,
+      "rating": 4.7,
+      "stock": 6,
+      "image": "https://via.placeholder.com/200",
+      "description": "55-inch 4K Ultra HD Smart LED TV with voice assistant."
+    }
+  ],
+  
+  "petfood": [
+    {
+      "id": 1,
+      "name": "Pedigree Adult Dog Food",
+      "category": "Dog",
+      "price": 1200,
+      "rating": 4.6,
+      "stock": 30,
+      "image": "https://via.placeholder.com/200",
+      "description": "Complete and balanced nutrition for adult dogs with chicken and rice."
+    },
+    {
+      "id": 2,
+      "name": "Whiskas Kitten Food",
+      "category": "Cat",
+      "price": 850,
+      "rating": 4.5,
+      "stock": 25,
+      "image": "https://via.placeholder.com/200",
+      "description": "Dry cat food specially formulated for kittens up to 12 months."
+    },
+    {
+      "id": 3,
+      "name": "Drools Dog Biscuits",
+      "category": "Dog",
+      "price": 250,
+      "rating": 4.3,
+      "stock": 50,
+      "image": "https://via.placeholder.com/200",
+      "description": "Crunchy dog biscuits enriched with vitamins and minerals."
+    },
+    {
+      "id": 4,
+      "name": "Me-O Cat Treats",
+      "category": "Cat",
+      "price": 150,
+      "rating": 4.4,
+      "stock": 40,
+      "image": "https://via.placeholder.com/200",
+      "description": "Tasty salmon-flavored cat treats for healthy skin and coat."
+    },
+    {
+      "id": 5,
+      "name": "Royal Canin Puppy Food",
+      "category": "Dog",
+      "price": 1800,
+      "rating": 4.7,
+      "stock": 20,
+      "image": "https://via.placeholder.com/200",
+      "description": "Premium dry food for puppies to support growth and development."
+    }
   ]
 }
+
+
+
+
+
+
+
+

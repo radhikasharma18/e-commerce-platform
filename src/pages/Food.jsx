@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import food1 from "../assets/food.jpg";
 
 const Food = () => {
   const [food, setFood] = useState([]);
@@ -12,8 +13,13 @@ const Food = () => {
   }, []);
   return (
     <div className="grid grid-cols-3 gap-4 p-4">
+      {" "}
       {food.map((foods) => (
         <div key={foods.id} className="border-[1px] border-black p-4">
+          <div className="flex justify-center">
+            {" "}
+            <img src={food1} />
+          </div>
           <h6 className="font-bold text-xl">{foods.name}</h6>
           <div>Category{foods.category}</div>
           <div className="font-bold">Price-${foods.price}</div>

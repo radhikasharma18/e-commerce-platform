@@ -21,6 +21,7 @@ import {
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [categories, setCategories] = useState(false);
+  const [rotated, setRotated] = useState(false);
 
   const navigate = useNavigate();
   const handleViewCart = () => {
@@ -87,41 +88,52 @@ function Navbar() {
         </div>
         <div className="md:px-8 px-2 flex justify-between w-[100%] h-[50px] bg-[#e9e7e8] ">
           <div className="flex  justify-between gap-2">
-            <div className="flex items-center bg-gray-100 justify-center w-[200px] h-[100%] border-[1px] border-gray-200 hover:scale-105 ">
+            <div
+              onClick={() => {
+                setCategories(!categories), setRotated(!rotated);
+              }}
+              className="flex items-center bg-tranparent hover justify-center w-[200px] h-[100%] border-[1px] border-gray-200 hover:scale-105  hover:bg-gray-100"
+            >
               <div>
-                <button onClick={() => setCategories(!categories)}>
-                  CATEGORIES
-                </button>
+                <button>CATEGORIES</button>
               </div>{" "}
-              <span>
+              <span
+                className={`p-3 transition-transform duration-300 ${
+                  rotated ? "rotate-180" : "rotate-0"
+                }`}
+              >
                 <IoIosArrowDown />
               </span>
             </div>
             <div className="lg:flex gap-6 hidden">
-              <NavLink to="/" className="flex items-center hover:scale-105">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? " flex items-center  bg-gray-100 "
+                    : "flex items-center hover:scale-105 hover:bg-gray-100 "
+                }
+              >
                 <div>HOME</div>{" "}
-                <span>
-                  <IoIosArrowDown />
-                </span>
               </NavLink>
-              <div className="flex items-center hover:scale-105">
-                <div>PAGES</div>{" "}
-                <span>
-                  <IoIosArrowDown />
-                </span>
-              </div>
+
               <NavLink
                 to="/product"
-                className="flex items-center hover:scale-105"
+                className={({ isActive }) =>
+                  isActive
+                    ? " flex items-center  bg-gray-100 "
+                    : "flex items-center hover:scale-105 hover:bg-gray-100 "
+                }
               >
                 <div>PRODUCTS</div>{" "}
-                <span>
-                  <IoIosArrowDown />
-                </span>
               </NavLink>
               <NavLink
                 to="/contact"
-                className="flex items-center hover:scale-105"
+                className={({ isActive }) =>
+                  isActive
+                    ? " flex items-center  bg-gray-100 "
+                    : "flex items-center hover:scale-105 hover:bg-gray-100 "
+                }
               >
                 <div>CONTACT</div>{" "}
               </NavLink>
@@ -141,16 +153,20 @@ function Navbar() {
             <NavLink
               to="/petfood"
               className="border-b-[1px] border-gray-400 font-serif hover:text-lg cursor-pointer"
-              onClick={() => setCategories(false)}
+              onClick={() => {
+                setCategories(false), setRotated(false);
+              }}
             >
               Pet Food
             </NavLink>
           </div>
           <div>
             <NavLink
-              to="/eletronic"
+              to="/electonic"
               className="border-b-[1px] border-gray-400 font-serif hover:text-lg cursor-pointer"
-              onClick={() => setCategories(false)}
+              onClick={() => {
+                setCategories(false), setRotated(false);
+              }}
             >
               Electronic itmes
             </NavLink>
@@ -159,7 +175,9 @@ function Navbar() {
             <NavLink
               to="/furniture"
               className="border-b-[1px] border-gray-400 font-serif hover:text-lg cursor-pointer"
-              onClick={() => setCategories(false)}
+              onClick={() => {
+                setCategories(false), setRotated(false);
+              }}
             >
               Furniture
             </NavLink>
@@ -168,7 +186,9 @@ function Navbar() {
             <NavLink
               to="/household"
               className="border-b-[1px] border-gray-400 font-serif hover:text-lg cursor-pointer"
-              onClick={() => setCategories(false)}
+              onClick={() => {
+                setCategories(false), setRotated(false);
+              }}
             >
               Household Items
             </NavLink>
@@ -177,7 +197,9 @@ function Navbar() {
             <NavLink
               to="/food"
               className="border-b-[1px] border-gray-400 font-serif hover:text-lg cursor-pointer"
-              onClick={() => setCategories(false)}
+              onClick={() => {
+                setCategories(false), setRotated(false);
+              }}
             >
               Food
             </NavLink>
@@ -186,7 +208,9 @@ function Navbar() {
             <NavLink
               to="/toy"
               className=" font-serif hover:text-lg cursor-pointer"
-              onClick={() => setCategories(false)}
+              onClick={() => {
+                setCategories(false), setRotated(false);
+              }}
             >
               Toy
             </NavLink>
@@ -200,6 +224,7 @@ function Navbar() {
         <NavLink
           to="/"
           className="flex  items-center border-b-[1px] border-gray-400 px-16"
+          onClick={() => setMenuOpen(false)}
         >
           <div>HOME</div>{" "}
           <span>
@@ -218,6 +243,7 @@ function Navbar() {
         <NavLink
           to="/product"
           className="flex items-center border-b-[1px] border-gray-400 px-16"
+          onClick={() => setMenuOpen(false)}
         >
           <div>PRODUCTS</div>{" "}
           <span>
@@ -227,30 +253,35 @@ function Navbar() {
         <NavLink
           to="/contact"
           className="flex items-center border-b-[1px] border-gray-400 px-16"
+          onClick={() => setMenuOpen(false)}
         >
           <div>CONTACT</div>{" "}
         </NavLink>
         <NavLink
           to="/exchange"
           className="flex items-center border-b-[1px] border-gray-400 px-16"
+          onClick={() => setMenuOpen(false)}
         >
           <div>EXCHANGE</div>{" "}
         </NavLink>
         <NavLink
           to="/cart"
           className="flex items-center border-b-[1px] border-gray-400 px-16"
+          onClick={() => setMenuOpen(false)}
         >
           <div>CART</div>{" "}
         </NavLink>
         <NavLink
           to="/wishlist"
           className="flex items-center border-b-[1px] border-gray-400 px-16"
+          onClick={() => setMenuOpen(false)}
         >
           <div>WISHLIST</div>{" "}
         </NavLink>
         <NavLink
           to="/login"
           className="flex items-center border-b-[1px] border-gray-400 px-16"
+          onClick={() => setMenuOpen(false)}
         >
           <div>LOGIN</div>{" "}
         </NavLink>

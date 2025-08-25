@@ -9,6 +9,10 @@ import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import Toys from "./pages/Toys";
 import Food from "./pages/Food";
+import Household from "./pages/Household";
+import Furniture from "./pages/Furniture";
+import Electronic from "./pages/Electronic";
+import Petfood from "./pages/Petfood";
 
 function App() {
   return (
@@ -23,6 +27,10 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/toy" element={<Toys />} />
         <Route path="/food" element={<Food />} />
+        <Route path="/household" element={<Household />} />
+        <Route path="/furniture" element={<Furniture />} />
+        <Route path="electonic" element={<Electronic />} />
+        <Route path="petfood" element={<Petfood />} />
       </Routes>
       <Footer />
     </BrowserRouter>

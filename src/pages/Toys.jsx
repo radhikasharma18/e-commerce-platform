@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import toys1 from "../assets/toy1.jpg";
 
 const Toys = () => {
   const [toys, setToys] = useState([]);
@@ -16,6 +17,9 @@ const Toys = () => {
       <ul className="grid grid-cols-3 gap-4">
         {toys.map((toy) => (
           <li key={toy.id} className="border p-2 mb-2 rounded ">
+            <div className="flex justify-center">
+              <img src={toys1} />
+            </div>
             <h3 className="font-bold">{toy.name}</h3>
             <p>Brand: {toy.brand}</p>
             <p>Price: ₹{toy.price}</p>
